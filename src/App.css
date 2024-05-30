@@ -13,7 +13,7 @@ nav ul {
   display: flex;
   list-style: none;
   margin: 0;  
-  padding-left: 100px;
+  padding-left: 30px;
   padding-bottom: 30px;
   font-size: 30px;
 }
@@ -79,7 +79,7 @@ input.submit {
 .account {
   padding-left: 530px;
   padding-top: 0px;
-  width: 150px;
+  width: 199px;
 }
 
 .account form {
