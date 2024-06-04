@@ -16,7 +16,7 @@ import cat from "../img/cat.svg";
 const Container = styled.div`
     width: 100% !important;
     height: 190px;
-    background-color: #e2d9d9ad;
+    background-color: #ffffff;
 `
 const Headd = styled.ul`
     height: 60px;
@@ -126,7 +126,8 @@ const Cat = styled.div`
 // Подвал
 const Block2 = styled.div`
     position: relative;
-    width: 160px;
+    width: 100%;
+    height: 140px;
     padding-top: 60px;
     padding-left: 150px;
 `
@@ -143,6 +144,8 @@ const Podpis = styled.div`
 
 const Foot2 = styled.div`
     display: flex;
+    width: 100%;
+    height: 100px;
     gap: 40px;
     padding-left: 147px;
     font-size: 12px;
@@ -159,7 +162,7 @@ const Navbar = () => {
         <Container>
             <Headd>
                 <Left>
-                    <img src={kotopes} alt="Logo" />
+                    <a href="/f lat"><img src={kotopes} alt="Logo" /></a>
                     <SearchContainer>
                         <Input></Input>
                         <SearchIcon style={{ color: "orange", fontSize: 16 }} />
@@ -185,8 +188,8 @@ const Navbar = () => {
                 </Right>
             </Headd>
             <Pitomsi>
-                <a href="#">Кошки</a>
-                <a href="#">Собаки</a>
+                <a href="/cats">Кошки</a>
+                <a href="/dogs">Собаки</a>
                 <a href="#">Ветаптека</a>
                 <a href="#">Акции</a>
             </Pitomsi>
@@ -195,7 +198,7 @@ const Navbar = () => {
                 <Cat><img src={cat} alt="cat" /></Cat>
                 <Hh1>Лохматость сильно <br /> повысится!</Hh1>
                 <Pp1>Скидка 20% на все шампуни <br /> для котеек.</Pp1>
-                <Btnn1><p>Смотреть шампуни  ➝</p></Btnn1>\
+                <Btnn1><p>Смотреть шампуни  ➝</p></Btnn1>
             </Block1>
 
             {/* Подвал */}
@@ -210,7 +213,6 @@ const Navbar = () => {
                     <Button>Подписаться</Button>
                 </Podpis>
             </Footer>
-            <hr />
             <Foot2>
                 <Textt>© 2015-2019 Интернет-магазин <br /> зоотоваров «Сытая Морда»</Textt>
                 <Textt>Стоимость товаров на сайте <br /> не являеся публичой офертой</Textt>
