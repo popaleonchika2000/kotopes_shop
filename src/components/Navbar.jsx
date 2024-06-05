@@ -1,5 +1,5 @@
 // Важное
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import React from 'react';
 import styled from "styled-components";
 import SearchIcon from '@mui/icons-material/Search';
@@ -10,6 +10,7 @@ import { ShoppingCart } from '@mui/icons-material';
 import kotopes from "../img/kotopes.svg";
 import fon from "../img/fon.svg";
 import cat from "../img/cat.svg";
+import roual from "../img/roual.png";
 
 
 // Главная страница
@@ -47,21 +48,68 @@ const Right = styled.div`
     display: flex;
 `
 const SearchContainer = styled.div`
-    position: absolute;
-    border: 1px solid orange;
-    align-items: center;
+    @import url(https://fonts.googleapis.com/css?family=Roboto);
+    body {
+    background-color : #FAFAFA;
+    display : grid;
+    }
+    .search_box {
+    padding-top : 30px;
+    padding-left: 500px;
+    }
+    .search {
+    padding-left: 25px;
     display: flex;
-    padding: 5px;
-    margin-left: 410px;
-    width: 600px;
-    height: 30px;
-    
-`
-const Input = styled.input`
+    align-items: center;
+    margin : auto;
+    width : 612px;
+    height: 54px;
+    background-color : white;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.1);
+    }
+    .select_area {
+    color : #4451FE;
+    display : flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif; line-height:24px;
+    font-weight : medium ;
+    }
+    .text {
+    padding-left:15px;
+    }
+    .line {
+    margin-left: 15px;
+    border-left: 1px solid #D8D8D8;
+    height: 40px;
+    }
+    .search_text {
+    width: 100%;
     border: none;
-    width: 600px;
-    height: 20px;
+    margin-left : 15px;
+    font-size : 16px;
+    font-family: 'Roboto', sans-serif; line-height:24px;
+    font-weight : "Regular";
+    }
+    .text_and-icon {
+    width: 410px;
+    display: flex;
+    align-items: center;
+    }
+    .search_text:focus {
+    outline: none !important;
+    }
+    .search_text:focus + .search_icon{
+    color : #4451FE;
+    transform: translate(55px,0);
+        -webkit-transform: translate(55px,0); 
+        -o-transform: translate(55px,0); 
+        -moz-transform: translate(55px);
+    }
 `
+
 const MenuItem = styled.div`
     font-size: 15px;
     cursor: pointer;
@@ -70,12 +118,15 @@ const MenuItem = styled.div`
 
 const Pitomsi = styled.div`
     display: flex;
-    text-decoration: none;
     width: 380px;
     height: 20px;
     padding-top: 50px;
     padding-left: 90px;
     gap: 30px;
+    .link {
+     text-decoration: none;   
+    }
+    
 `
 const Block1 = styled.div`
     width: 100%;
@@ -124,13 +175,7 @@ const Cat = styled.div`
 `
 
 // Подвал
-const Block2 = styled.div`
-    position: relative;
-    width: 100%;
-    height: 140px;
-    padding-top: 60px;
-    padding-left: 150px;
-`
+
 const Footer = styled.div`
     width: 100%;
     height: 130px; 
@@ -140,6 +185,40 @@ const Footer = styled.div`
 `
 const Podpis = styled.div`
     padding-top: 30px;
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        height: 40px;
+    }
+    .form-box {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #ececec8d;
+        box-shadow: 10px 10px 15px #f0e7e7d1, -10px -10px -15px #fff;
+    }
+    .form-box input {
+        font-size: 16px;
+        color: #000000;
+        padding: 5px 5px;
+        outline: none;
+        border: none;
+        border-color: #969696b5;
+        background: #ececec;
+    }
+    .form-box button {
+        color: #ffffff;
+        padding: 7px 10px;
+        font-size: 14px;
+        border: none;
+        border-radius: 4px;
+        background-color: #8d8d8d;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .form-box button:hover {
+        background-color: #6b6b6b;
+    }
 `
 
 const Foot2 = styled.div`
@@ -156,6 +235,152 @@ const Textt = styled.div`
     
 `
 
+// Стили для карточек
+
+const Block2 = styled.div`
+    position: relative;
+    width: 100%;
+    height: 800px;
+    padding-top: 60px;
+    padding-left: 150px;
+
+    .h1 {
+        width: 129px;
+        height: 35px;
+        font-weight: 700;
+        font-size: 36px;
+        padding-left: 10px;
+    }
+
+    .card {
+        width: 230px;
+        min-height: 500px;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        border-radius: 4px;
+        position: relative;
+        transition: 0.2s;
+    }
+    .card:hover {
+        box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.349);
+    }
+    .card__top {
+        flex: 0 0 250px;
+        padding-left: 20px;
+        padding-top: 20px;
+        position: relative;
+    }
+    .card__img {
+        position: absolute;
+        top: 5;
+        left: 10;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .card__img:hover > img {
+        transform: scale(1.1);
+    }
+    .card__label {
+        position: absolute;
+        bottom: 10px;
+        left: 4px;
+        padding: 4px 8px;
+        background-color: #EC2525;
+        border-radius: 5px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .card__bottom {
+        flex: 1 0 auto;
+    }
+    .card__prices {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .card__price {
+        width: 50%;
+    }
+    .card__price--discount {
+        padding-left: 7px;
+        font-weight: 700;
+        font-size: 19px;
+        color: #414141;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .card__price--discount::before {
+        content: "Со скидкой";
+        font-weight: 400;
+        font-size: 13px;
+        color: #bfbfbf;
+    }
+    .card__price--common {
+        font-weight: 400;
+        font-size: 17px;
+        color: #606060;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: flex-end;
+    }
+    .card__price--common::before {
+        content: "Обычная";
+        font-weight: 400;
+        font-size: 13px;
+        color: #bfbfbf;
+    }
+    .card__title {
+        padding-left: 7px;
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 1.2;
+        text-decoration: none;
+        color: #414141;
+    }
+    .card__title:hover {
+        color: #ff6633;
+    }
+    .card__btn   {
+        display: block;
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 190px;
+        font-weight: 400;
+        font-size: 17px;
+        color: #000000;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #FE9015 ;
+        background-color: #f1ebe36c;
+        border-radius: 4px;
+    }
+    .card__btn:hover {
+        background-color: #FE9015;
+        color: #fff;
+    }
+
+    .container {
+        width: 100%; 
+        max-width: 1440px;
+        padding: 0 15px;
+        margin: 0;
+    }
+    .container__cards {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, 225px);
+        justify-content: left;
+        justify-items: center;
+        margin: 0;
+        column-gap: 50px;
+        row-gap: 40px;
+    }
+`
+
 // Сам код
 const Navbar = () => {
     return (
@@ -164,9 +389,19 @@ const Navbar = () => {
                 <Left>
                     <a href="/f lat"><img src={kotopes} alt="Logo" /></a>
                     <SearchContainer>
-                        <Input></Input>
-                        <SearchIcon style={{ color: "orange", fontSize: 16 }} />
-
+                        <div class="search_box">
+                            <div class="search">
+                                <div class="select_area">
+                                    <i class="fas fa-map-marker-alt map_icon"></i>
+                                    <div class="text">Moscow</div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="text_and-icon">
+                                    <input type="text" class="search_text" id="search_text" placeholder="Поиск товаров" />
+                                    <SearchIcon style={{ color: "gr", fontSize: 25 }} />
+                                </div>
+                            </div>
+                        </div>
                     </SearchContainer>
                 </Left>
                 <Center>
@@ -188,10 +423,10 @@ const Navbar = () => {
                 </Right>
             </Headd>
             <Pitomsi>
-                <a href="/cats">Кошки</a>
-                <a href="/dogs">Собаки</a>
-                <a href="#">Ветаптека</a>
-                <a href="#">Акции</a>
+                <a class="link" href="/cats">Кошки</a>
+                <a class="link" href="/dogs">Собаки</a>
+                <a class="link" href="/apteka">Ветаптека</a>
+                <a class="link" href="#">Акции</a>
             </Pitomsi>
             <Block1>
                 <Fon><img src={fon} alt="fon" /></Fon>
@@ -204,13 +439,103 @@ const Navbar = () => {
             {/* Подвал */}
             <Block2>
                 <h1>Акции</h1>
+                <section class="cards">
+                    <div class="container container__cards">
+                        <div class="card">
+                            <div class="card__top">
+                                <a href="#!" class="card__img">
+                                    <img src={roual} alt="roual" />
+                                </a>
+                                <div class="card__label">-33%</div>
+                            </div>
+                            <div class="card__bottom">
+                                <div className="card__prices">
+                                    <div className="card__price card__price--discount">3651 ₽</div>
+                                    <div className="card__price card__price--common">4500 ₽</div>
+                                </div>
+                                <a href="#!" className="card__title">Влажный корм Royal <br /> Canin British shorthair <br /> кусочки в соусе для <br /> британских кошек  </a>
+                                <button className="card__btn">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__top">
+                                <a href="#!" class="card__img">
+                                    <img src={roual} alt="roual" />
+                                </a>
+                                <div class="card__label">-33%</div>
+                            </div>
+                            <div class="card__bottom">
+                                <div className="card__prices">
+                                    <div className="card__price card__price--discount">3651 ₽</div>
+                                    <div className="card__price card__price--common">4500 ₽</div>
+                                </div>
+                                <a href="#!" className="card__title">Влажный корм Royal <br /> Canin British shorthair <br /> кусочки в соусе для <br /> британских кошек  </a>
+                                <button className="card__btn">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__top">
+                                <a href="#!" class="card__img">
+                                    <img src={roual} alt="roual" />
+                                </a>
+                                <div class="card__label">-33%</div>
+                            </div>
+                            <div class="card__bottom">
+                                <div className="card__prices">
+                                    <div className="card__price card__price--discount">3651 ₽</div>
+                                    <div className="card__price card__price--common">4500 ₽</div>
+                                </div>
+                                <a href="#!" className="card__title">Влажный корм Royal <br /> Canin British shorthair <br /> кусочки в соусе для <br /> британских кошек  </a>
+                                <button className="card__btn">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__top">
+                                <a href="#!" class="card__img">
+                                    <img src={roual} alt="roual" />
+                                </a>
+                                <div class="card__label">-33%</div>
+                            </div>
+                            <div class="card__bottom">
+                                <div className="card__prices">
+                                    <div className="card__price card__price--discount">3651 ₽</div>
+                                    <div className="card__price card__price--common">4500 ₽</div>
+                                </div>
+                                <a href="#!" className="card__title">Влажный корм Royal <br /> Canin British shorthair <br /> кусочки в соусе для <br /> британских кошек  </a>
+                                <button className="card__btn">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__top">
+                                <a href="#!" class="card__img">
+                                    <img src={roual} alt="roual" />
+                                </a>
+                                <div class="card__label">-33%</div>
+                            </div>
+                            <div class="card__bottom">
+                                <div className="card__prices">
+                                    <div className="card__price card__price--discount">3651 ₽</div>
+                                    <div className="card__price card__price--common">4500 ₽</div>
+                                </div>
+                                <a href="#!" className="card__title">Влажный корм Royal <br /> Canin British shorthair <br /> кусочки в соусе для <br /> британских кошек  </a>
+                                <button className="card__btn">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </Block2>
             <hr />
             <Footer>
                 <p>Узнавайте о новых скидках и спецпредложениях:</p>
                 <Podpis>
-                    <input type='text' placeholder='Ваш E-mail'></input>
-                    <Button>Подписаться</Button>
+                    <div class="box">
+                        <form action="#">
+                            <div class="form-box">
+                                <input type="text" name='EmailAddress' placeholder='Ваш E-mail' />
+                                <button type='submit'>Подписаться</button>
+                            </div>
+                        </form>
+                    </div>
                 </Podpis>
             </Footer>
             <Foot2>

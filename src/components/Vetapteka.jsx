@@ -8,20 +8,18 @@ import { ShoppingCart } from '@mui/icons-material';
 
 // Картинки
 import kotopes from "../img/kotopes.svg";
-import pesnam from "../img/pesnam.svg";
-import kost from "../img/kost.svg";
-import vita from "../img/vita.svg";
-import kypkyp from "../img/kypkyp.svg";
-import grym from "../img/grym.svg";
-import ball from "../img/ball.svg";
-import kletka from "../img/kletka.svg";
-import miski from "../img/miski.svg";
-import clothe from "../img/clothe.svg";
-import oshei from "../img/oshei.svg";
-import amyn from "../img/amyn.svg";
-import dres from "../img/dres.svg";
-import badge from "../img/badge.svg";
-
+import obra from "../img/obra.svg";
+import catt from "../img/catt.svg";
+import glist from "../img/glist.svg";
+import ykol from "../img/ykol.svg";
+import spok from "../img/spok.svg";
+import bobo from "../img/bobo.svg";
+import pech from "../img/pech.svg";
+import kostu from "../img/kostu.svg";
+import alergu from "../img/alergu.svg";
+import tabletka from "../img/tabletka.svg";
+import vitanam from "../img/vitanam.svg";
+import bipbip from "../img/bipbip.svg";
 
 
 // Главная страница
@@ -144,7 +142,7 @@ const Pitomsi = styled.div`
 const Block2 = styled.div`
     position: relative;
     width: 100%;
-    height: 950px;
+    height: 800px;
     padding-top: 70px;
     padding-left: 100px;
 
@@ -341,7 +339,7 @@ const Textt = styled.div`
 
 
 // Сам код
-const Dogs = () => {
+const Vetapteka = () => {
     return (
         <Container>
             <Headd>
@@ -389,31 +387,31 @@ const Dogs = () => {
             </Pitomsi>
             {/* Подвал */}
             <Block2>
-                <h1>Товары для собак</h1>
+                <h1>Ветаптека</h1>
                 <Kartochki>
                     <div class="row">
                         <div class="column">
                             <div class="card">
-                                <img src={pesnam} alt="Kart" />
-                                <div class="card_label">Корм для собак</div>
+                                <img src={obra} alt="Kart" />
+                                <div class="card_label">Обработка от блох и клещей</div>
                             </div>
                         </div>
                         <div class="column">
                             <div class="card">
-                                <img src={kost} alt="Kart" />
-                                <div class="card_label">Лакомства</div>
+                                <img src={catt} alt="Kart" />
+                                <div class="card_label">Для ушей, носа и глаз</div>
                             </div>
                         </div>
                         <div class="column">
                             <div class="card">
-                                <img src={vita} alt="Kart" />
-                                <div class="card_label">Витамины</div>
+                                <img src={glist} alt="Kart" />
+                                <div class="card_label">Глистогонные препараты</div>
                             </div>
                         </div>
                         <div class="column">
                             <div class="card">
-                                <img src={kypkyp} alt="Kart" />
-                                <div class="card_label">Средства гигиены</div>
+                                <img src={ykol} alt="Kart" />
+                                <div class="card_label">Вакцины</div>
                             </div>
                         </div>
                     </div>
@@ -422,26 +420,26 @@ const Dogs = () => {
                     <div class="row">
                         <div class="column">
                             <div class="card">
-                                <img src={grym} alt="Kart" />
-                                <div class="card_label">Груминг и косметика</div>
+                                <img src={spok} alt="Kart" />
+                                <div class="card_label">Успокоительные препараты</div>
                             </div>
                         </div>
                         <div class="column">
                             <div class="card">
-                                <img src={ball} alt="Kart" />
-                                <div class="card_label">Игрушки</div>
+                                <img src={bobo} alt="Kart" />
+                                <div class="card_label">При заболеваниях ЖКТ</div>
                             </div>
                         </div>
                         <div class="column">
                             <div class="card">
-                                <img src={kletka} alt="Kart" />
-                                <div class="card_label">Клетки, переноски, лежанки</div>
+                                <img src={pech} alt="Kart" />
+                                <div class="card_label">Заболевания почек и печени</div>
                             </div>
                         </div>
                         <div class="column">
                             <div class="card">
-                                <img src={miski} alt="Kart" />
-                                <div class="card_label">Миски</div>
+                                <img src={kostu} alt="Kart" />
+                                <div class="card_label">Опорно-двигательный аппарат</div>
                             </div>
                         </div>
                     </div>
@@ -450,32 +448,26 @@ const Dogs = () => {
                     <div class="row">
                         <div class="column">
                             <div class="card">
-                                <img src={clothe} alt="Kart" />
-                                <div class="card_label">Одежда и обувь</div>
+                                <img src={alergu} alt="Kart" />
+                                <div class="card_label">При аллергических реакциях</div>
                             </div>
                         </div>
                         <div class="column">
                             <div class="card">
-                                <img src={oshei} alt="Kart" />
-                                <div class="card_label">Ошейники и намордники</div>
+                                <img src={tabletka} alt="Kart" />
+                                <div class="card_label">Широкий спектр действий</div>
                             </div>
                         </div>
                         <div class="column">
                             <div class="card">
-                                <img src={amyn} alt="Kart" />
-                                <div class="card_label">Поводки, шлейки, цепи</div>
+                                <img src={vitanam} alt="Kart" />
+                                <div class="card_label">Витаминные и минеральные препараты</div>
                             </div>
                         </div>
                         <div class="column">
                             <div class="card">
-                                <img src={dres} alt="Kart" />
-                                <div class="card_label">Для дрессировки</div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="card">
-                                <img src={badge} alt="Kart" />
-                                <div class="card_label">Сувениры и украшения</div>
+                                <img src={bipbip} alt="Kart" />
+                                <div class="card_label">Прочие ветеринарные товары</div>
                             </div>
                         </div>
                     </div>
@@ -504,4 +496,4 @@ const Dogs = () => {
     )
 }
 
-export default Dogs
+export default Vetapteka

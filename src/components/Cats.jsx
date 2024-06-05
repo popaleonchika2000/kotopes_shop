@@ -60,20 +60,66 @@ const Right = styled.div`
     display: flex;
 `
 const SearchContainer = styled.div`
-    position: absolute;
-    border: 1px solid orange;
-    align-items: center;
+    @import url(https://fonts.googleapis.com/css?family=Roboto);
+    body {
+    background-color : #FAFAFA;
+    display : grid;
+    }
+    .search_box {
+    padding-top : 30px;
+    padding-left: 500px;
+    }
+    .search {
+    padding-left: 25px;
     display: flex;
-    padding: 5px;
-    margin-left: 410px;
-    width: 600px;
-    height: 30px;
-    
-`
-const Input = styled.input`
+    align-items: center;
+    margin : auto;
+    width : 612px;
+    height: 54px;
+    background-color : white;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.1);
+    }
+    .select_area {
+    color : #4451FE;
+    display : flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif; line-height:24px;
+    font-weight : medium ;
+    }
+    .text {
+    padding-left:15px;
+    }
+    .line {
+    margin-left: 15px;
+    border-left: 1px solid #D8D8D8;
+    height: 40px;
+    }
+    .search_text {
+    width: 100%;
     border: none;
-    width: 600px;
-    height: 20px;
+    margin-left : 15px;
+    font-size : 16px;
+    font-family: 'Roboto', sans-serif; line-height:24px;
+    font-weight : "Regular";
+    }
+    .text_and-icon {
+    width: 410px;
+    display: flex;
+    align-items: center;
+    }
+    .search_text:focus {
+    outline: none !important;
+    }
+    .search_text:focus + .search_icon{
+    color : #4451FE;
+    transform: translate(55px,0);
+        -webkit-transform: translate(55px,0); 
+        -o-transform: translate(55px,0); 
+        -moz-transform: translate(55px);
+    }
 `
 const MenuItem = styled.div`
     font-size: 15px;
@@ -83,12 +129,14 @@ const MenuItem = styled.div`
 
 const Pitomsi = styled.div`
     display: flex;
-    text-decoration: none;
     width: 380px;
     height: 20px;
     padding-top: 50px;
     padding-left: 90px;
     gap: 30px;
+    .link {
+     text-decoration: none;   
+    }
 `
 
 
@@ -242,6 +290,40 @@ const Footer = styled.div`
 `
 const Podpis = styled.div`
     padding-top: 30px;
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        height: 40px;
+    }
+    .form-box {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #ececec8d;
+        box-shadow: 10px 10px 15px #f0e7e7d1, -10px -10px -15px #fff;
+    }
+    .form-box input {
+        font-size: 16px;
+        color: #000000;
+        padding: 5px 5px;
+        outline: none;
+        border: none;
+        border-color: #969696b5;
+        background: #ececec;
+    }
+    .form-box button {
+        color: #ffffff;
+        padding: 7px 10px;
+        font-size: 14px;
+        border: none;
+        border-radius: 4px;
+        background-color: #8d8d8d;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .form-box button:hover {
+        background-color: #6b6b6b;
+    }
 `
 
 const Foot2 = styled.div`
@@ -266,9 +348,19 @@ const Cats = () => {
                 <Left>
                     <img src={kotopes} alt="Logo" />
                     <SearchContainer>
-                        <Input></Input>
-                        <SearchIcon style={{ color: "orange", fontSize: 16 }} />
-
+                        <div class="search_box">
+                            <div class="search">
+                                <div class="select_area">
+                                    <i class="fas fa-map-marker-alt map_icon"></i>
+                                    <div class="text">Moscow</div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="text_and-icon">
+                                    <input type="text" class="search_text" id="search_text" placeholder="Поиск товаров" />
+                                    <SearchIcon style={{ color: "gr", fontSize: 25 }} />
+                                </div>
+                            </div>
+                        </div>
                     </SearchContainer>
                 </Left>
                 <Center>
@@ -290,10 +382,10 @@ const Cats = () => {
                 </Right>
             </Headd>
             <Pitomsi>
-                <a href="#">Кошки</a>
-                <a href="#">Собаки</a>
-                <a href="#">Ветаптека</a>
-                <a href="#">Акции</a>
+                <a class="link" href="/cats">Кошки</a>
+                <a class="link" href="/dogs">Собаки</a>
+                <a class="link" href="/apteka">Ветаптека</a>
+                <a class="link" href="#">Акции</a>
             </Pitomsi>
             {/* Подвал */}
             <Block2>
@@ -387,8 +479,14 @@ const Cats = () => {
             <Footer>
                 <p>Узнавайте о новых скидках и спецпредложениях:</p>
                 <Podpis>
-                    <input type='text' placeholder='Ваш E-mail'></input>
-                    <Button>Подписаться</Button>
+                    <div class="box">
+                        <form action="#">
+                            <div class="form-box">
+                                <input type="text" name='EmailAddress' placeholder='Ваш E-mail' />
+                                <button type='submit'>Подписаться</button>
+                            </div>
+                        </form>
+                    </div>
                 </Podpis>
             </Footer>
             <Foot2>

@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './pages/Home';
 import Page2 from './pages/Page2';
 import Page3 from './pages/Page3';
+import Page4 from './pages/Page4';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
   {
     path: "/dogs",
     element: <Page3/>,
+  },
+
+  {
+    path: "/apteka",
+    element: <Page4/>,
   },
   
 ]);
