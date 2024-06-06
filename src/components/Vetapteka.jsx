@@ -122,6 +122,12 @@ const MenuItem = styled.div`
     font-size: 15px;
     cursor: pointer;
     margin-right: 30px;
+    .link {
+        text-decoration: none;
+    }
+    .link:hover {
+        color: #FE9015;
+    }
 `
 
 const Pitomsi = styled.div`
@@ -133,6 +139,9 @@ const Pitomsi = styled.div`
     gap: 30px;
     .link {
      text-decoration: none;   
+    }
+    .link:hover {
+        color: #ED1C22;
     }
 `
 
@@ -370,8 +379,8 @@ const Vetapteka = () => {
                     <MenuItem>Контакты</MenuItem>
                 </Center>
                 <Right>
-                    <MenuItem>Регистрация</MenuItem>
-                    <MenuItem>Войти</MenuItem>
+                    <MenuItem><a class="link" href="/registr">Регистрация</a></MenuItem>
+                    <MenuItem><a class="link" href="/voity">Войти</a></MenuItem>
                     <MenuItem>
                         <Badge badgeContent={4} color="primary">
                             <ShoppingCart />
@@ -383,7 +392,7 @@ const Vetapteka = () => {
                 <a class="link" href="/cats">Кошки</a>
                 <a class="link" href="/dogs">Собаки</a>
                 <a class="link" href="/apteka">Ветаптека</a>
-                <a class="link" href="#">Акции</a>
+                <a class="link" href="/sales">Акции</a>
             </Pitomsi>
             {/* Подвал */}
             <Block2>

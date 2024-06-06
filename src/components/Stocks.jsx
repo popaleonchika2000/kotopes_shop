@@ -8,8 +8,6 @@ import { ShoppingCart } from '@mui/icons-material';
 
 // Картинки
 import kotopes from "../img/kotopes.svg";
-import fon from "../img/fon.svg";
-import cat from "../img/cat.svg";
 import roual from "../img/roual.png";
 import chik from "../img/chik.png";
 import tabletka from "../img/tabletka.png";
@@ -49,8 +47,6 @@ const Right = styled.div`
     text-align: right;
     align-items: right;
     display: flex;
-    text-decoration: none;
-    
 `
 const SearchContainer = styled.div`
     @import url(https://fonts.googleapis.com/css?family=Roboto);
@@ -142,51 +138,8 @@ const Pitomsi = styled.div`
     }
     
 `
-const Block1 = styled.div`
-    width: 100%;
-    height: 570px;
-`
-const Hh1 = styled.div`
-    font-family: Montserrat;
-    position: absolute;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 47.6px;
-    text-align: left;
-    color: #FFFFFF;
-    padding-left: 350px;
-    padding-top: 120px;
-`
-const Pp1 = styled.div`
-    font-family: Montserrat;
-    position: absolute;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 33.6px;
-    text-align: left;
-    color: #FFFFFF;
-    padding-left: 350px;
-    padding-top: 230px;
-`
-const Btnn1 = styled.p`
-    width: 230px;
-    position: absolute;
-    color: #FFFFFF;
-    height: 50px;
-    padding-left: 350px;
-    padding-top: 380px;
-    cursor: pointer;
-`
-const Fon = styled.div`
-    position: absolute;
-    padding-left: 300px;
-    padding-top: 70px;
-`
-const Cat = styled.div`
-    position: absolute;
-    padding-left: 985px;
-    padding-top:40px;
-`
+
+
 
 // Подвал
 
@@ -254,14 +207,14 @@ const Textt = styled.div`
 const Block2 = styled.div`
     position: relative;
     width: 100%;
-    height: 800px;
-    padding-top: 60px;
+    height: 1750px;
+    padding-top: 120px;
     padding-left: 150px;
 
     .h1 {
         width: 129px;
         height: 35px;
-        font-weight: 700;
+        font-weight: 700px;
         font-size: 36px;
         padding-left: 10px;
     }
@@ -391,12 +344,12 @@ const Block2 = styled.div`
         justify-items: center;
         margin: 0;
         column-gap: 50px;
-        row-gap: 40px;
+        row-gap: 50px;
     }
 `
 
 // Сам код
-const Navbar = () => {
+const Stocks = () => {
     return (
         <Container>
             <Headd>
@@ -427,8 +380,8 @@ const Navbar = () => {
                     <MenuItem>Контакты</MenuItem>
                 </Center>
                 <Right>
-                    <MenuItem> <a class="link" href="/registr">Регистрация</a></MenuItem>
-                    <MenuItem> <a class="link" href="/voity">Войти</a></MenuItem>
+                    <MenuItem><a class="link" href="/registr">Регистрация</a></MenuItem>
+                    <MenuItem><a class="link" href="/voity">Войти</a></MenuItem>
                     <MenuItem>
                         <Badge badgeContent={4} color="primary">
                             <ShoppingCart />
@@ -442,19 +395,172 @@ const Navbar = () => {
                 <a class="link" href="/apteka">Ветаптека</a>
                 <a class="link" href="/sales">Акции</a>
             </Pitomsi>
-            <Block1>
-                <Fon><img src={fon} alt="fon" /></Fon>
-                <Cat><img src={cat} alt="cat" /></Cat>
-                <Hh1>Лохматость сильно <br /> повысится!</Hh1>
-                <Pp1>Скидка 20% на все шампуни <br /> для котеек.</Pp1>
-                <Btnn1><p>Смотреть шампуни  ➝</p></Btnn1>
-            </Block1>
 
             {/* Подвал */}
             <Block2>
                 <h1>Акции</h1>
                 <section class="cards">
                     <div class="container container__cards">
+                        <div class="card">
+                            <div class="card__top">
+                                <a href="#!" class="card__img">
+                                    <img src={roual} alt="roual" />
+                                </a>
+                                <div class="card__label">-33%</div>
+                            </div>
+                            <div class="card__bottom">
+                                <div className="card__prices">
+                                    <div className="card__price card__price--discount">3015 ₽</div>
+                                    <div className="card__price card__price--common">4500 ₽</div>
+                                </div>
+                                <a href="#!" className="card__title">Влажный корм Royal <br /> Canin British shorthair <br /> кусочки в соусе для <br /> британских кошек  </a>
+                                <button className="card__btn">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__top">
+                                <a href="#!" class="card__img">
+                                    <img src={chik} alt="roual" />
+                                </a>
+                                <div class="card__label">-50%</div>
+                            </div>
+                            <div class="card__bottom">
+                                <div className="card__prices">
+                                    <div className="card__price card__price--discount">978 ₽</div>
+                                    <div className="card__price card__price--common">1957 ₽</div>
+                                </div>
+                                <a href="#!" className="card__title">Пуходерка Hello Pet 16811M металлическая средняя. Подойдет каждой кошке. </a>
+                                <button className="card__btn">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__top">
+                                <a href="#!" class="card__img">
+                                    <img src={tabletka} alt="roual" />
+                                </a>
+                                <div class="card__label">-45%</div>
+                            </div>
+                            <div class="card__bottom">
+                                <div className="card__prices">
+                                    <div className="card__price card__price--discount">3244 ₽</div>
+                                    <div className="card__price card__price--common">5899 ₽</div>
+                                </div>
+                                <a href="#!" className="card__title">Zoetis: Симпарика 5мг (3таб.) от блох и клещей для собак мелкой породы (1,3-2,5кг)  </a>
+                                <button className="card__btn">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__top">
+                                <a href="#!" class="card__img">
+                                    <img src={konserva} alt="roual" />
+                                </a>
+                                <div class="card__label">-15%</div>
+                            </div>
+                            <div class="card__bottom">
+                                <div className="card__prices">
+                                    <div className="card__price card__price--discount">255 ₽</div>
+                                    <div className="card__price card__price--common">300 ₽</div>
+                                </div>
+                                <a href="#!" className="card__title">Консервы Royal Canin Adult Beauty для собак всех возрастов и пород (195 гр) </a>
+                                <button className="card__btn">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__top">
+                                <a href="#!" class="card__img">
+                                    <img src={chik} alt="roual" />
+                                </a>
+                                <div class="card__label">-50%</div>
+                            </div>
+                            <div class="card__bottom">
+                                <div className="card__prices">
+                                    <div className="card__price card__price--discount">978 ₽</div>
+                                    <div className="card__price card__price--common">1957 ₽</div>
+                                </div>
+                                <a href="#!" className="card__title">Пуходерка Hello Pet 16811M металлическая средняя. Подойдет каждой кошке.  </a>
+                                <button className="card__btn">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__top">
+                                <a href="#!" class="card__img">
+                                    <img src={roual} alt="roual" />
+                                </a>
+                                <div class="card__label">-33%</div>
+                            </div>
+                            <div class="card__bottom">
+                                <div className="card__prices">
+                                    <div className="card__price card__price--discount">3015 ₽</div>
+                                    <div className="card__price card__price--common">4500 ₽</div>
+                                </div>
+                                <a href="#!" className="card__title">Влажный корм Royal <br /> Canin British shorthair <br /> кусочки в соусе для <br /> британских кошек  </a>
+                                <button className="card__btn">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__top">
+                                <a href="#!" class="card__img">
+                                    <img src={chik} alt="roual" />
+                                </a>
+                                <div class="card__label">-50%</div>
+                            </div>
+                            <div class="card__bottom">
+                                <div className="card__prices">
+                                    <div className="card__price card__price--discount">978 ₽</div>
+                                    <div className="card__price card__price--common">1957 ₽</div>
+                                </div>
+                                <a href="#!" className="card__title">Пуходерка Hello Pet 16811M металлическая средняя. Подойдет каждой кошке. </a>
+                                <button className="card__btn">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__top">
+                                <a href="#!" class="card__img">
+                                    <img src={tabletka} alt="roual" />
+                                </a>
+                                <div class="card__label">-45%</div>
+                            </div>
+                            <div class="card__bottom">
+                                <div className="card__prices">
+                                    <div className="card__price card__price--discount">3244 ₽</div>
+                                    <div className="card__price card__price--common">5899 ₽</div>
+                                </div>
+                                <a href="#!" className="card__title">Zoetis: Симпарика 5мг (3таб.) от блох и клещей для собак мелкой породы (1,3-2,5кг)  </a>
+                                <button className="card__btn">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__top">
+                                <a href="#!" class="card__img">
+                                    <img src={konserva} alt="roual" />
+                                </a>
+                                <div class="card__label">-15%</div>
+                            </div>
+                            <div class="card__bottom">
+                                <div className="card__prices">
+                                    <div className="card__price card__price--discount">255 ₽</div>
+                                    <div className="card__price card__price--common">300 ₽</div>
+                                </div>
+                                <a href="#!" className="card__title">Консервы Royal Canin Adult Beauty для собак всех возрастов и пород (195 гр) </a>
+                                <button className="card__btn">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__top">
+                                <a href="#!" class="card__img">
+                                    <img src={chik} alt="roual" />
+                                </a>
+                                <div class="card__label">-50%</div>
+                            </div>
+                            <div class="card__bottom">
+                                <div className="card__prices">
+                                    <div className="card__price card__price--discount">978 ₽</div>
+                                    <div className="card__price card__price--common">1957 ₽</div>
+                                </div>
+                                <a href="#!" className="card__title">Пуходерка Hello Pet 16811M металлическая средняя. Подойдет каждой кошке.  </a>
+                                <button className="card__btn">В корзину</button>
+                            </div>
+                        </div>
                         <div class="card">
                             <div class="card__top">
                                 <a href="#!" class="card__img">
@@ -561,4 +667,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Stocks
