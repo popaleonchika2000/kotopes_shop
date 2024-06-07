@@ -403,7 +403,7 @@ const Stocks = () => {
                     <div class="container container__cards">
                         <div class="card">
                             <div class="card__top">
-                                <a href="#!" class="card__img">
+                                <a href="/korm" class="card__img">
                                     <img src={roual} alt="roual" />
                                 </a>
                                 <div class="card__label">-33%</div>
@@ -413,13 +413,13 @@ const Stocks = () => {
                                     <div className="card__price card__price--discount">3015 ₽</div>
                                     <div className="card__price card__price--common">4500 ₽</div>
                                 </div>
-                                <a href="#!" className="card__title">Влажный корм Royal <br /> Canin British shorthair <br /> кусочки в соусе для <br /> британских кошек  </a>
+                                <a href="/korm" className="card__title">Влажный корм Royal <br /> Canin British shorthair <br /> кусочки в соусе для <br /> британских кошек  </a>
                                 <button className="card__btn">В корзину</button>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card__top">
-                                <a href="#!" class="card__img">
+                                <a href="/pyx" class="card__img">
                                     <img src={chik} alt="roual" />
                                 </a>
                                 <div class="card__label">-50%</div>
@@ -429,13 +429,13 @@ const Stocks = () => {
                                     <div className="card__price card__price--discount">978 ₽</div>
                                     <div className="card__price card__price--common">1957 ₽</div>
                                 </div>
-                                <a href="#!" className="card__title">Пуходерка Hello Pet 16811M металлическая средняя. Подойдет каждой кошке. </a>
+                                <a href="/pyx" className="card__title">Пуходерка Hello Pet 16811M металлическая средняя. Подойдет каждой кошке. </a>
                                 <button className="card__btn">В корзину</button>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card__top">
-                                <a href="#!" class="card__img">
+                                <a href="/simpa" class="card__img">
                                     <img src={tabletka} alt="roual" />
                                 </a>
                                 <div class="card__label">-45%</div>
@@ -445,29 +445,29 @@ const Stocks = () => {
                                     <div className="card__price card__price--discount">3244 ₽</div>
                                     <div className="card__price card__price--common">5899 ₽</div>
                                 </div>
-                                <a href="#!" className="card__title">Zoetis: Симпарика 5мг (3таб.) от блох и клещей для собак мелкой породы (1,3-2,5кг)  </a>
+                                <a href="/simpa" className="card__title">Zoetis: Симпарика 5мг (3таб.) от блох и клещей для собак мелкой породы (1,3-2,5кг)  </a>
                                 <button className="card__btn">В корзину</button>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card__top">
-                                <a href="#!" class="card__img">
+                                <a href="/konserv" class="card__img">
                                     <img src={konserva} alt="roual" />
                                 </a>
-                                <div class="card__label">-15%</div>
+                                <div class="card__label">-65%</div>
                             </div>
                             <div class="card__bottom">
                                 <div className="card__prices">
-                                    <div className="card__price card__price--discount">255 ₽</div>
-                                    <div className="card__price card__price--common">300 ₽</div>
+                                    <div className="card__price card__price--discount">419,65 ₽</div>
+                                    <div className="card__price card__price--common">1199 ₽</div>
                                 </div>
-                                <a href="#!" className="card__title">Консервы Royal Canin Adult Beauty для собак всех возрастов и пород (195 гр) </a>
+                                <a href="/konserv" className="card__title">Консервы Royal Canin Adult Beauty для собак всех возрастов и пород (195 гр) </a>
                                 <button className="card__btn">В корзину</button>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card__top">
-                                <a href="#!" class="card__img">
+                                <a href="/pyx" class="card__img">
                                     <img src={chik} alt="roual" />
                                 </a>
                                 <div class="card__label">-50%</div>
@@ -477,13 +477,13 @@ const Stocks = () => {
                                     <div className="card__price card__price--discount">978 ₽</div>
                                     <div className="card__price card__price--common">1957 ₽</div>
                                 </div>
-                                <a href="#!" className="card__title">Пуходерка Hello Pet 16811M металлическая средняя. Подойдет каждой кошке.  </a>
+                                <a href="/pyx" className="card__title">Пуходерка Hello Pet 16811M металлическая средняя. Подойдет каждой кошке.  </a>
                                 <button className="card__btn">В корзину</button>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card__top">
-                                <a href="#!" class="card__img">
+                                <a href="/korm" class="card__img">
                                     <img src={roual} alt="roual" />
                                 </a>
                                 <div class="card__label">-33%</div>
@@ -493,13 +493,13 @@ const Stocks = () => {
                                     <div className="card__price card__price--discount">3015 ₽</div>
                                     <div className="card__price card__price--common">4500 ₽</div>
                                 </div>
-                                <a href="#!" className="card__title">Влажный корм Royal <br /> Canin British shorthair <br /> кусочки в соусе для <br /> британских кошек  </a>
+                                <a href="/korm" className="card__title">Влажный корм Royal <br /> Canin British shorthair <br /> кусочки в соусе для <br /> британских кошек  </a>
                                 <button className="card__btn">В корзину</button>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card__top">
-                                <a href="#!" class="card__img">
+                                <a href="/pyx" class="card__img">
                                     <img src={chik} alt="roual" />
                                 </a>
                                 <div class="card__label">-50%</div>
@@ -509,13 +509,13 @@ const Stocks = () => {
                                     <div className="card__price card__price--discount">978 ₽</div>
                                     <div className="card__price card__price--common">1957 ₽</div>
                                 </div>
-                                <a href="#!" className="card__title">Пуходерка Hello Pet 16811M металлическая средняя. Подойдет каждой кошке. </a>
+                                <a href="/pyx" className="card__title">Пуходерка Hello Pet 16811M металлическая средняя. Подойдет каждой кошке. </a>
                                 <button className="card__btn">В корзину</button>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card__top">
-                                <a href="#!" class="card__img">
+                                <a href="/simpa" class="card__img">
                                     <img src={tabletka} alt="roual" />
                                 </a>
                                 <div class="card__label">-45%</div>
@@ -525,29 +525,29 @@ const Stocks = () => {
                                     <div className="card__price card__price--discount">3244 ₽</div>
                                     <div className="card__price card__price--common">5899 ₽</div>
                                 </div>
-                                <a href="#!" className="card__title">Zoetis: Симпарика 5мг (3таб.) от блох и клещей для собак мелкой породы (1,3-2,5кг)  </a>
+                                <a href="/simpa" className="card__title">Zoetis: Симпарика 5мг (3таб.) от блох и клещей для собак мелкой породы (1,3-2,5кг)  </a>
                                 <button className="card__btn">В корзину</button>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card__top">
-                                <a href="#!" class="card__img">
+                                <a href="/konserv" class="card__img">
                                     <img src={konserva} alt="roual" />
                                 </a>
                                 <div class="card__label">-15%</div>
                             </div>
                             <div class="card__bottom">
                                 <div className="card__prices">
-                                    <div className="card__price card__price--discount">255 ₽</div>
-                                    <div className="card__price card__price--common">300 ₽</div>
+                                    <div className="card__price card__price--discount">419,65 ₽</div>
+                                    <div className="card__price card__price--common">1199 ₽</div>
                                 </div>
-                                <a href="#!" className="card__title">Консервы Royal Canin Adult Beauty для собак всех возрастов и пород (195 гр) </a>
+                                <a href="/konserv" className="card__title">Консервы Royal Canin Adult Beauty для собак всех возрастов и пород (195 гр) </a>
                                 <button className="card__btn">В корзину</button>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card__top">
-                                <a href="#!" class="card__img">
+                                <a href="/pyx" class="card__img">
                                     <img src={chik} alt="roual" />
                                 </a>
                                 <div class="card__label">-50%</div>
@@ -557,13 +557,13 @@ const Stocks = () => {
                                     <div className="card__price card__price--discount">978 ₽</div>
                                     <div className="card__price card__price--common">1957 ₽</div>
                                 </div>
-                                <a href="#!" className="card__title">Пуходерка Hello Pet 16811M металлическая средняя. Подойдет каждой кошке.  </a>
+                                <a href="/pyx" className="card__title">Пуходерка Hello Pet 16811M металлическая средняя. Подойдет каждой кошке.  </a>
                                 <button className="card__btn">В корзину</button>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card__top">
-                                <a href="#!" class="card__img">
+                                <a href="/korm" class="card__img">
                                     <img src={roual} alt="roual" />
                                 </a>
                                 <div class="card__label">-33%</div>
@@ -573,13 +573,13 @@ const Stocks = () => {
                                     <div className="card__price card__price--discount">3015 ₽</div>
                                     <div className="card__price card__price--common">4500 ₽</div>
                                 </div>
-                                <a href="#!" className="card__title">Влажный корм Royal <br /> Canin British shorthair <br /> кусочки в соусе для <br /> британских кошек  </a>
+                                <a href="/korm" className="card__title">Влажный корм Royal <br /> Canin British shorthair <br /> кусочки в соусе для <br /> британских кошек  </a>
                                 <button className="card__btn">В корзину</button>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card__top">
-                                <a href="#!" class="card__img">
+                                <a href="/pyx" class="card__img">
                                     <img src={chik} alt="roual" />
                                 </a>
                                 <div class="card__label">-50%</div>
@@ -589,13 +589,13 @@ const Stocks = () => {
                                     <div className="card__price card__price--discount">978 ₽</div>
                                     <div className="card__price card__price--common">1957 ₽</div>
                                 </div>
-                                <a href="#!" className="card__title">Пуходерка Hello Pet 16811M металлическая средняя. Подойдет каждой кошке. </a>
+                                <a href="/pyx" className="card__title">Пуходерка Hello Pet 16811M металлическая средняя. Подойдет каждой кошке. </a>
                                 <button className="card__btn">В корзину</button>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card__top">
-                                <a href="#!" class="card__img">
+                                <a href="/simpa" class="card__img">
                                     <img src={tabletka} alt="roual" />
                                 </a>
                                 <div class="card__label">-45%</div>
@@ -605,13 +605,13 @@ const Stocks = () => {
                                     <div className="card__price card__price--discount">3244 ₽</div>
                                     <div className="card__price card__price--common">5899 ₽</div>
                                 </div>
-                                <a href="#!" className="card__title">Zoetis: Симпарика 5мг (3таб.) от блох и клещей для собак мелкой породы (1,3-2,5кг)  </a>
+                                <a href="/simpa" className="card__title">Zoetis: Симпарика 5мг (3таб.) от блох и клещей для собак мелкой породы (1,3-2,5кг)  </a>
                                 <button className="card__btn">В корзину</button>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card__top">
-                                <a href="#!" class="card__img">
+                                <a href="/konserv" class="card__img">
                                     <img src={konserva} alt="roual" />
                                 </a>
                                 <div class="card__label">-15%</div>
@@ -621,13 +621,13 @@ const Stocks = () => {
                                     <div className="card__price card__price--discount">255 ₽</div>
                                     <div className="card__price card__price--common">300 ₽</div>
                                 </div>
-                                <a href="#!" className="card__title">Консервы Royal Canin Adult Beauty для собак всех возрастов и пород (195 гр) </a>
+                                <a href="/konserv" className="card__title">Консервы Royal Canin Adult Beauty для собак всех возрастов и пород (195 гр) </a>
                                 <button className="card__btn">В корзину</button>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card__top">
-                                <a href="#!" class="card__img">
+                                <a href="/pyx" class="card__img">
                                     <img src={chik} alt="roual" />
                                 </a>
                                 <div class="card__label">-50%</div>
@@ -637,7 +637,7 @@ const Stocks = () => {
                                     <div className="card__price card__price--discount">978 ₽</div>
                                     <div className="card__price card__price--common">1957 ₽</div>
                                 </div>
-                                <a href="#!" className="card__title">Пуходерка Hello Pet 16811M металлическая средняя. Подойдет каждой кошке.  </a>
+                                <a href="/pyx" className="card__title">Пуходерка Hello Pet 16811M металлическая средняя. Подойдет каждой кошке.  </a>
                                 <button className="card__btn">В корзину</button>
                             </div>
                         </div>
