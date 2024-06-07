@@ -354,7 +354,7 @@ const Stocks = () => {
         <Container>
             <Headd>
                 <Left>
-                    <a href="/f lat"><img src={kotopes} alt="Logo" /></a>
+                    <a href="/flat"><img src={kotopes} alt="Logo" /></a>
                     <SearchContainer>
                         <div class="search_box">
                             <div class="search">

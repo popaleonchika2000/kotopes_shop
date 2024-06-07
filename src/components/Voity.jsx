@@ -363,7 +363,7 @@ const Registr = () => {
         <Container>
             <Headd>
                 <Left>
-                    <a href="/f lat"><img src={kotopes} alt="Logo" /></a>
+                    <a href="/flat"><img src={kotopes} alt="Logo" /></a>
                     <SearchContainer>
                         <div class="search_box">
                             <div class="search">
@@ -417,7 +417,6 @@ const Registr = () => {
                                 </div>
                                 <div class="field input-field">
                                     <input type="password" placeholder='Password' class="password" />
-                                    <img class="eye-icon" src={hide} alt="fon" />
                                 </div>
                                 <div class="field button-field">
                                     <button>Войти</button>

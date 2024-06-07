@@ -8,21 +8,7 @@ import { ShoppingCart } from '@mui/icons-material';
 
 // Картинки
 import kotopes from "../img/kotopes.svg";
-import pesnam from "../img/pesnam.svg";
-import kost from "../img/kost.svg";
-import vita from "../img/vita.svg";
-import kypkyp from "../img/kypkyp.svg";
-import grym from "../img/grym.svg";
-import ball from "../img/ball.svg";
-import kletka from "../img/kletka.svg";
-import miski from "../img/miski.svg";
-import clothe from "../img/clothe.svg";
-import oshei from "../img/oshei.svg";
-import amyn from "../img/amyn.svg";
-import dres from "../img/dres.svg";
-import badge from "../img/badge.svg";
-
-
+import roual from "../img/roual.png";
 
 // Главная страница
 const Container = styled.div`
@@ -147,147 +133,220 @@ const Pitomsi = styled.div`
     }
 `
 
-
-
-// Подвал
+// Середина
 const Block2 = styled.div`
     position: relative;
     width: 100%;
     height: 950px;
     padding-top: 70px;
-    padding-left: 100px;
+    padding-left: 70px;
 
     .hr {
         width: 100%;
     }
-`
-const Kartochki = styled.div`
-    width: 1000px;
-    .column {
-        float: left;
-        width: 250px;
-        padding-top: 40px;
 
+    .product-image img {
+        width: 350px;
+        height: 350px;
     }
-    /* Стиль контейнера карточек */
-    .card {
-        width: 200px;
-        height: 160px;
-        box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        border-radius: 4px;
-        text-align: center;
-        background-color: #ffffff;
-        position: relative;
+    .product-image  {
+        width: 360px;
     }
-    .card:hover {
-        box-shadow: 4px 8px 16px rgba(255, 132, 17, 0.623)
+    .product-wrapper {
+        display: grid;
+        grid-template-columns: 35% 1fr;
+        grid-template-rows: auto 1fr;
+        margin-top: 50px;
     }
-    .row img {
-        top: 0;
-        left: 0;
-        width: 50px;
-        height: 50px;
-        padding-left: 75px;
-        padding-top: 25px;
+    .main-thumb {
+        width: 400px;
     }
-    .card_label {
-        width: 200px;
+    .product-wrapper h1 {
+        width: 751px;
+        height: 63px;
+        font-size: 24px;
+        font-weight: 700;
         position: absolute;
-        height: 24px;
-        font-family: Montserrat;
+        display: block;
+        text-align: left;
+        justify-content: right;
+        padding-left: 420px;
+        padding-top: 20px;
+    }
+    .product-model {
+        margin: 30px 0;
         font-size: 14px;
         font-weight: 500;
-        text-align: center;
-        padding-top: 110px;
-    }
-`
-const Kartochki2 = styled.div`
-    width: 1000px;
-    .column {
-        float: left;
-        width: 250px;
-        padding-top: 40px;
-
-    }
-    /* Стиль контейнера карточек */
-    .card {
-        width: 200px;
-        height: 160px;
-        box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        border-radius: 4px;
-        text-align: center;
-        background-color: #ffffff;
-        position: relative;
-    }
-    .card:hover {
-        box-shadow: 4px 8px 16px rgba(255, 132, 17, 0.623)
-    }
-    .row img {
-        top: 0;
-        left: 0;
-        width: 50px;
-        height: 50px;
-        padding-left: 75px;
-        padding-top: 25px;
-    }
-    .card_label {
-        width: 200px;
+        width: 150px;
+        height: 16px;
+        color: #848992;
         position: absolute;
-        height: 24px;
-        font-family: Montserrat;
-        font-size: 14px;
-        font-weight: 500;
-        text-align: center;
-        padding-top: 110px;
+        padding-left: 420px;
+        padding-top: 70px;
     }
-`
-const Kartochki3 = styled.div`
-    width: 1000px;
-    .column {
-        float: left;
-        width: 250px;
-        padding-top: 40px;
 
+    /* Купить */
+    .card__btn   {
+        display: block;
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 77px;
+        font-size: 16px;
+        color: #000000;
+        padding: 10px;
+        border: 1px solid #FE9015 ;
+        background-color: #faf9f86c;
+        border-radius: 5px;
     }
-    /* Стиль контейнера карточек */
-    .card {
-        width: 200px;
-        height: 160px;
-        box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.2);
-        display: flex;
-        flex-direction: column;
-        border-radius: 4px;
-        text-align: center;
-        background-color: #ffffff;
-        position: relative;
+    .card__btn:focus {
+        background-color: #FE9015;
+        color: #fff;
     }
-    .card:hover {
-        box-shadow: 4px 8px 16px rgba(255, 132, 17, 0.623)
-    }
-    .row img {
-        top: 0;
-        left: 0;
-        width: 50px;
-        height: 50px;
-        padding-left: 75px;
-        padding-top: 25px;
-    }
-    .card_label {
-        width: 200px;
+    .options-block {
+        width: 151px;
+        height: 63px;
         position: absolute;
-        height: 24px;
-        font-family: Montserrat;
-        font-size: 14px;
-        font-weight: 500;
-        text-align: center;
-        padding-top: 110px;
-        color: #333333;
+        display: block;
+        text-align: left;
+        padding-left: 400px;
+        padding-top: 120px;
     }
+    .cart-block {
+        display: block;
+        position: relative;
+        margin-left: 420px;
+        margin-top: -150px;
+        margin-bottom: 20px;
+        width: 270px;
+        height: 200px;
+        border-radius: 5px;
+        border: 1px solid #C8CBD0;
+    }
+
+    .card__price {
+        width: 70%;
+    }
+    .card__price--discount {
+        position: absolute;
+        padding-left: 20px;
+        padding-top: 15px;
+        font-weight: 700;
+        font-size: 24px;
+        color: #EC2525;
+    }
+    .card__price--discount::before {
+        
+        font-weight: 400;
+        font-size: 13px;
+        color: #bfbfbf;
+    }
+    .card__price--common {
+        font-weight: 500;
+        position: absolute;
+        padding-top: 22px;
+        font-size: 15px;
+        text-decoration: line-through;
+	    text-decoration-color: #848992;
+        color: #848992;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .card__price--common::before {
+        font-weight: 400;
+        font-size: 13px;
+        color: #bfbfbf;
+    }
+
+    .btn-korzina  {
+        display: block;
+        margin-left: 40px;
+        margin-top: 60px;
+        width: 190px;
+        font-weight: 400;
+        font-size: 17px;
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #fe9015 ;
+        background-color: #FE9015;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .btn-korzina:hover {
+        background-color: #db7e13;
+    }
+    .btn-click  {
+        display: block;
+        margin-left: 40px;
+        margin-top: 20px;
+        width: 190px;
+        font-weight: 400;
+        font-size: 17px;
+        color: #fe9015;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #fe9015 ;
+        background-color: #ffffff;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .btn-click:hover{
+        background-color: #FE9015 ;
+        color: #fff;
+    }
+
+    .delivery {
+        width: 600px;
+        display: block;
+        list-style-type: none;
+        padding-left: 750px;
+        margin-top: -170px;
+        line-height: 35px;
+    }
+    .instock, .today {
+        color: #219653;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: "Montserrat";
+    }
+    .silka a {
+        text-decoration: none;
+        color: #FE9015;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .silka a:hover {
+        text-decoration: underline;
+    }
+
+    /* Описание */
+
+    .tabs p {
+        padding-top: 60px;
+    }
+    .tabs hr {
+        margin-top: 20px ;
+    }
+    .tabs-wrapper {
+        padding-top: 30px;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "Montserrat";
+    }
+    .card__label {
+        position: absolute;
+        top: 100px;
+        padding: 4px 8px;
+        background-color: #EC2525;
+        border-radius: 5px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+
 `
+
 // Подвал
 const Footer = styled.div`
     width: 100%;
@@ -350,7 +409,7 @@ const Textt = styled.div`
 
 
 // Сам код
-const Dogs = () => {
+const KartaRoual = () => {
     return (
         <Container>
             <Headd>
@@ -398,97 +457,66 @@ const Dogs = () => {
             </Pitomsi>
             {/* Подвал */}
             <Block2>
-                <h1>Товары для собак</h1>
-                <Kartochki>
-                    <div class="row">
-                        <div class="column">
-                            <div class="card">
-                                <img src={pesnam} alt="Kart" />
-                                <div class="card_label">Корм для собак</div>
-                            </div>
+                <div id="product-product" class="container">
+                    <div class="product-wrapper">
+                        <h1>Влажный корм Royal Canin British shorthair кусочки в <br /> соусе для британских кошек  </h1>
+                        <div class="product-model">Код товара: 15205</div>
+                        <div class="options-block">
+                            <button className="card__btn">1,75 кг</button>
                         </div>
-                        <div class="column">
-                            <div class="card">
-                                <img src={kost} alt="Kart" />
-                                <div class="card_label">Лакомства</div>
-                            </div>
+                    </div>
+                    <div class="product-image">
+                        <div class="main-thumb">
+                            <img class="img-responsive" src={roual} title="Сухой корм WELLNESS CORE из индейки с курицей для котят (Срок годности 26.06.2024)"
+                                alt="Сухой корм WELLNESS CORE из индейки с курицей для котят (Срок годности 26.06.2024)" width="468" height="468" />
                         </div>
-                        <div class="column">
-                            <div class="card">
-                                <img src={vita} alt="Kart" />
-                                <div class="card_label">Витамины</div>
+                        <div class="card__label">-33%</div>
+                        <div class="cart-block">
+                            <div class="price-block">
+                                <span class="card__price card__price--discount">3015 ₽</span>
+                                <span class="card__price card__price--common">4500 ₽</span>
                             </div>
-                        </div>
-                        <div class="column">
-                            <div class="card">
-                                <img src={kypkyp} alt="Kart" />
-                                <div class="card_label">Средства гигиены</div>
+                            <div class="cart-counter-wrapper">
+                                <button class="btn-korzina">В корзину</button>
+                            </div>
+                            <div class="xs-1 sm-3 md-1">
+                                <button class="btn-click">Купить в 1 клик</button>
                             </div>
                         </div>
                     </div>
-                </Kartochki>
-                <Kartochki2>
-                    <div class="row">
-                        <div class="column">
-                            <div class="card">
-                                <img src={grym} alt="Kart" />
-                                <div class="card_label">Груминг и косметика</div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="card">
-                                <img src={ball} alt="Kart" />
-                                <div class="card_label">Игрушки</div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="card">
-                                <img src={kletka} alt="Kart" />
-                                <div class="card_label">Клетки, переноски, лежанки</div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="card">
-                                <img src={miski} alt="Kart" />
-                                <div class="card_label">Миски</div>
-                            </div>
+                    <div class="product-info">
+
+                        <ul class="delivery">
+                            <li class="instock">
+                                <span>Есть на складе</span>
+                            </li>
+                            <li class="today">
+                                <span>Доставим сегодня</span>
+                            </li>
+                            <li class="d-flex fl-start">
+                                <div class="silka">
+                                    <div>Бесплатная доставка по Тюмени при заказе от 1490 ₽</div>
+                                    <a href="#" class="">Узнать все условия доставки</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tabs">
+                        <h1><p>Описание</p></h1>
+                        <hr />
+                    </div>
+                    
+                    <div class="tabs-wrapper">
+                        <div class="tab-content">
+                            <p>Корм для британских короткошерстных кошек создан с учетом особенностей <br />этой породы. Коренастые и сильные животные нуждаются в рационе,
+                                который <br />позволит укрепить их суставы и поддержит работу сердца. Применение british <br /> shorthair adult снижает риск сердечных
+                                заболеваний. Количество жиров <br /> ограничено.</p>
+                            <p> <br /> </p>
+                            <p>Корм создан с учётом естественных потребностей домашних кошек, которые по <br />  своей природе являются хищниками, поэтому
+                                все корма Wellness CORE беззерновые <br /> и содержат свежее мясо и рыбу на первом месте во всех рецептурах.</p>
                         </div>
                     </div>
-                </Kartochki2>
-                <Kartochki3>
-                    <div class="row">
-                        <div class="column">
-                            <div class="card">
-                                <img src={clothe} alt="Kart" />
-                                <div class="card_label">Одежда и обувь</div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="card">
-                                <img src={oshei} alt="Kart" />
-                                <div class="card_label">Ошейники и намордники</div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="card">
-                                <img src={amyn} alt="Kart" />
-                                <div class="card_label">Поводки, шлейки, цепи</div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="card">
-                                <img src={dres} alt="Kart" />
-                                <div class="card_label">Для дрессировки</div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="card">
-                                <img src={badge} alt="Kart" />
-                                <div class="card_label">Сувениры и украшения</div>
-                            </div>
-                        </div>
-                    </div>
-                </Kartochki3>
+                </div>
             </Block2>
             <hr />
             <Footer>
@@ -513,4 +541,6 @@ const Dogs = () => {
     )
 }
 
-export default Dogs
+export default KartaRoual
+
+

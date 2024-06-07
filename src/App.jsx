@@ -6,6 +6,10 @@ import Page4 from './pages/Page4';
 import Page5 from './pages/Page5';
 import Signup from './pages/Signup';
 import Signin from './pages/Signin';
+import Roual from './pages/Roual';
+import Pyxoderka from './pages/Pyxoderka';
+import Simparika from './pages/Simparika';
+import Konservi from './pages/Konservi';
 
 import {
   createBrowserRouter,
@@ -44,6 +48,22 @@ const router = createBrowserRouter([
   {
     path: "/voity",
     element: <Signin/>,
+  },
+  {
+    path: "/korm",
+    element: <Roual/>,
+  },
+  {
+    path: "/pyx",
+    element: <Pyxoderka/>,
+  },
+  {
+    path: "/simpa",
+    element: <Simparika/>,
+  },
+  {
+    path: "/konserv",
+    element: <Konservi/>,
   },
   
 ]);

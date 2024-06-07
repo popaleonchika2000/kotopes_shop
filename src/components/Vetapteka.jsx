@@ -353,7 +353,7 @@ const Vetapteka = () => {
         <Container>
             <Headd>
                 <Left>
-                    <img src={kotopes} alt="Logo" />
+                    <a href="/flat"><img src={kotopes} alt="Logo" /></a>
                     <SearchContainer>
                         <div class="search_box">
                             <div class="search">
