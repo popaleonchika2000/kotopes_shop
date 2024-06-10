@@ -29,6 +29,12 @@ const Headd = styled.ul`
     margin: 0;  
     padding: 20px;
     font-weight: 600;
+    .link {
+        text-decoration: none;
+    }
+    .link:hover {
+        color: #FE9015;
+    }
 `
 const Left = styled.div`
     flex: 1;
@@ -43,6 +49,13 @@ const Center = styled.div`
     padding-left: 80px;
     align-items: right;
     display: flex;
+    .oyee {
+        text-decoration: none;
+    }
+    .oyee:hover {
+        color: #FE9015;
+    }
+
 `
 const Right = styled.div`
     flex: 1;
@@ -119,12 +132,6 @@ const MenuItem = styled.div`
     font-size: 15px;
     cursor: pointer;
     margin-right: 30px;
-    .link {
-        text-decoration: none;
-    }
-    .link:hover {
-        color: #FE9015;
-    }
 `
 
 const Pitomsi = styled.div`
@@ -147,7 +154,7 @@ const Block1 = styled.div`
     height: 570px;
 `
 const Hh1 = styled.div`
-    font-family: Montserrat;
+    font-family: "Montserrat";
     position: absolute;
     font-size: 40px;
     font-weight: 700;
@@ -158,7 +165,7 @@ const Hh1 = styled.div`
     padding-top: 120px;
 `
 const Pp1 = styled.div`
-    font-family: Montserrat;
+    font-family: "Montserrat";
     position: absolute;
     font-size: 20px;
     font-weight: 500;
@@ -419,12 +426,12 @@ const Navbar = () => {
                     </SearchContainer>
                 </Left>
                 <Center>
-                    <MenuItem> О нас</MenuItem>
-                    <MenuItem> Доставка и оплата</MenuItem>
-                    <MenuItem>Вопросы и ответы</MenuItem>
-                    <MenuItem>Отзывы</MenuItem>
-                    <MenuItem>Статьи</MenuItem>
-                    <MenuItem>Контакты</MenuItem>
+                    <MenuItem> <a class="oyee" href="#">О нас</a></MenuItem>
+                    <MenuItem> <a class="oyee" href="#">Доставка и оплата</a></MenuItem>
+                    <MenuItem><a class="oyee" href="#">Вопросы и ответы</a></MenuItem>
+                    <MenuItem><a class="oyee" href="/bonuss">Бонусы</a></MenuItem>
+                    <MenuItem><a class="oyee" href="/yslovie">Условия</a></MenuItem>
+                    <MenuItem><a class="oyee" href="#">Контакты</a></MenuItem>
                 </Center>
                 <Right>
                     <MenuItem> <a class="link" href="/registr">Регистрация</a></MenuItem>

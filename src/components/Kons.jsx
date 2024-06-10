@@ -37,6 +37,13 @@ const Center = styled.div`
     padding-left: 80px;
     align-items: right;
     display: flex;
+    .oyee {
+        text-decoration: none;
+    }
+    .oyee:hover {
+        color: #FE9015;
+    }
+
 `
 const Right = styled.div`
     flex: 1;
@@ -431,12 +438,12 @@ const Kons = () => {
                     </SearchContainer>
                 </Left>
                 <Center>
-                    <MenuItem> О нас</MenuItem>
-                    <MenuItem> Доставка и оплата</MenuItem>
-                    <MenuItem>Вопросы и ответы</MenuItem>
-                    <MenuItem>Отзывы</MenuItem>
-                    <MenuItem>Статьи</MenuItem>
-                    <MenuItem>Контакты</MenuItem>
+                     <MenuItem> <a class="oyee" href="#">О нас</a></MenuItem>
+                    <MenuItem> <a class="oyee" href="#">Доставка и оплата</a></MenuItem>
+                    <MenuItem><a class="oyee" href="#">Вопросы и ответы</a></MenuItem>
+                    <MenuItem><a class="oyee" href="/bonuss">Бонусы</a></MenuItem>
+                    <MenuItem><a class="oyee" href="/yslovie">Условия</a></MenuItem>
+                    <MenuItem><a class="oyee" href="#">Контакты</a></MenuItem>  
                 </Center>
                 <Right>
                     <MenuItem><a class="link" href="/registr">Регистрация</a></MenuItem>

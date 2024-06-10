@@ -10,6 +10,10 @@ import Roual from './pages/Roual';
 import Pyxoderka from './pages/Pyxoderka';
 import Simparika from './pages/Simparika';
 import Konservi from './pages/Konservi';
+import KittyFood from './pages/KittyFood';
+import DogeFood from './pages/DogeFood';
+import Yslovie from './pages/Yslovie';
+import Bonusi from './pages/Bonusi';
 
 import {
   createBrowserRouter,
@@ -65,7 +69,23 @@ const router = createBrowserRouter([
     path: "/konserv",
     element: <Konservi/>,
   },
-  
+  {
+    path: "/kitty",
+    element: <KittyFood/>,
+  },
+  {
+    path: "/puppy",
+    element: <DogeFood/>,
+  },
+  {
+    path: "/yslovie",
+    element: <Yslovie/>,
+  },
+  {
+    path: "/bonuss",
+    element: <Bonusi/>,
+  },
+
 ]);
 const App = () => {
   return (

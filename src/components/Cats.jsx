@@ -52,6 +52,13 @@ const Center = styled.div`
     padding-left: 80px;
     align-items: right;
     display: flex;
+    .oyee {
+        text-decoration: none;
+    }
+    .oyee:hover {
+        color: #FE9015;
+    }
+
 `
 const Right = styled.div`
     flex: 1;
@@ -148,8 +155,6 @@ const Pitomsi = styled.div`
     }
 `
 
-
-
 // Подвал
 const Block2 = styled.div`
     position: relative;
@@ -157,10 +162,10 @@ const Block2 = styled.div`
     height: 800px;
     padding-top: 70px;
     padding-left: 100px;
-
     .hr {
         width: 100%;
     }
+    
 `
 const Kartochki = styled.div`
     width: 1000px;
@@ -168,7 +173,6 @@ const Kartochki = styled.div`
         float: left;
         width: 250px;
         padding-top: 40px;
-
     }
     /* Стиль контейнера карточек */
     .card {
@@ -239,11 +243,11 @@ const Kartochki2 = styled.div`
         width: 200px;
         position: absolute;
         height: 24px;
-        font-family: Montserrat;
+        font-family: "Montserrat";
         font-size: 14px;
         font-weight: 500;
         text-align: center;
-        padding-top: 110px;
+        padding-top: 110px;  
     }
 `
 const Kartochki3 = styled.div`
@@ -281,7 +285,7 @@ const Kartochki3 = styled.div`
         width: 200px;
         position: absolute;
         height: 24px;
-        font-family: Montserrat;
+        font-family: "Montserrat", sans-serif;
         font-size: 14px;
         font-weight: 500;
         text-align: center;
@@ -373,12 +377,12 @@ const Cats = () => {
                     </SearchContainer>
                 </Left>
                 <Center>
-                    <MenuItem> О нас</MenuItem>
-                    <MenuItem> Доставка и оплата</MenuItem>
-                    <MenuItem>Вопросы и ответы</MenuItem>
-                    <MenuItem>Отзывы</MenuItem>
-                    <MenuItem>Статьи</MenuItem>
-                    <MenuItem>Контакты</MenuItem>
+                    <MenuItem> <a class="oyee" href="#">О нас</a></MenuItem>
+                    <MenuItem> <a class="oyee" href="#">Доставка и оплата</a></MenuItem>
+                    <MenuItem><a class="oyee" href="#">Вопросы и ответы</a></MenuItem>
+                    <MenuItem><a class="oyee" href="/bonuss">Бонусы</a></MenuItem>
+                    <MenuItem><a class="oyee" href="/yslovie">Условия</a></MenuItem>
+                    <MenuItem><a class="oyee" href="#">Контакты</a></MenuItem>
                 </Center>
                 <Right>
                     <MenuItem><a class="link" href="/registr">Регистрация</a></MenuItem>
@@ -404,7 +408,7 @@ const Cats = () => {
                         <div class="column">
                             <div class="card">
                                 <img src={fishcat} alt="Kart" />
-                                <div class="card_label">Корм для кошек</div>
+                                <a class="card_label" href="/kitty">Корм для кошек</a>
                             </div>
                         </div>
                         <div class="column">
