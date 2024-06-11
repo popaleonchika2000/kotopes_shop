@@ -380,12 +380,11 @@ const Dogs = () => {
                     </SearchContainer>
                 </Left>
                 <Center>
-                    <MenuItem> <a class="oyee" href="#">О нас</a></MenuItem>
-                    <MenuItem> <a class="oyee" href="#">Доставка и оплата</a></MenuItem>
-                    <MenuItem><a class="oyee" href="#">Вопросы и ответы</a></MenuItem>
+                    <MenuItem> <a class="oyee" href="/aboutus">О нас</a></MenuItem>
+                    <MenuItem><a class="oyee" href="/politika">Политика конфиденциальности</a></MenuItem>
                     <MenuItem><a class="oyee" href="/bonuss">Бонусы</a></MenuItem>
                     <MenuItem><a class="oyee" href="/yslovie">Условия</a></MenuItem>
-                    <MenuItem><a class="oyee" href="#">Контакты</a></MenuItem>
+                    <MenuItem><a class="oyee" href="/kontakt">Контакты</a></MenuItem>
                 </Center>
                 <Right>
                     <MenuItem><a class="link" href="/registr">Регистрация</a></MenuItem>

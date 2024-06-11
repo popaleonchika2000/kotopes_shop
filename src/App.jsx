@@ -14,6 +14,11 @@ import KittyFood from './pages/KittyFood';
 import DogeFood from './pages/DogeFood';
 import Yslovie from './pages/Yslovie';
 import Bonusi from './pages/Bonusi';
+import Polit from './pages/Polit';
+import Us from './pages/Us';
+import Korzina from './pages/Korzina';
+import Sms from './pages/Sms';
+
 
 import {
   createBrowserRouter,
@@ -84,6 +89,22 @@ const router = createBrowserRouter([
   {
     path: "/bonuss",
     element: <Bonusi/>,
+  },
+  {
+    path: "/politika",
+    element: <Polit/>,
+  },
+  {
+    path: "/aboutus",
+    element: <Us/>,
+  },
+  {
+    path: "/shop",
+    element: <Korzina/>,
+  },
+  {
+    path: "/kontakt",
+    element: <Sms/>,
   },
 
 ]);
