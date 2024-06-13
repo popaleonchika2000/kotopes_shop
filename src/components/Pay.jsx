@@ -8,24 +8,14 @@ import { ShoppingCart } from '@mui/icons-material';
 
 // Картинки
 import kotopes from "../img/kotopes.svg"
-import one from "../img/one.svg"
-import two from "../img/two.svg"
-import three from "../img/three.svg"
-import four from "../img/four.svg"
-import five from "../img/five.svg"
-import six from "../img/six.svg"
-import seven from "../img/seven.svg"
-import eight from "../img/eight.svg"
-import nine from "../img/nine.svg"
-import ten from "../img/ten.svg"
-import eleven from "../img/eleven.svg"
-import twelve from "../img/twelve.svg"
-import thirteen from "../img/thirteen.svg"
-import fourteen from "../img/fourteen.svg"
-import fifteen from "../img/fifteen.svg"
-import sixteen from "../img/sixteen.svg"
-import seventeen from "../img/seventeen.svg"
-import eighteen from "../img/eighteen.svg"
+import roual1 from "../img/roual1.png";
+import minus from "../img/minus.png";
+import plus from "../img/plus.png";
+import deletee from "../img/deletee.png";
+import repeat from "../img/repeat.png";
+import chik1 from "../img/chik1.png";
+import kon1 from "../img/kon1.png";
+import tab1 from "../img/tab1.png";
 
 
 // Главная страница
@@ -188,7 +178,241 @@ const Block2 = styled.div`
         width: 340px;
         margin-bottom: 20px;
     }
+
+    /* Товары */
+
+    .shopping-cart {
+        padding-top: 30px;
+        width: 850px;
+    }
+    .card {
+        width: 800px;
+        height: 140px;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        border-radius: 4px;
+        position: relative;
+        transition: 0.2s;
+        padding-top: 40px;
+    }
+    .card:hover {
+        box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.349);
+    }
+    .card__top {
+        padding-left: 20px;
+        padding-top: 10px;
+        position: relative;
+    }
+    .card__img.img {
+        width: 100px;
+        height: 100px;
+    }
+    .card__img:hover > img {
+        transform: scale(1.1);
+    }
+    .card__label {
+        position: absolute;
+        bottom: 130px;
+        left: 4px;
+        padding: 2px 5px;
+        background-color: #EC2525;
+        border-radius: 4px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .card__right {
+        flex: 1 0 auto;
+    }
+    .card__prices {
+        display: flex;
+    }
+    .card__price {
+        width: 68px;
+    }
+    .card__price--discount {
+        width: 72px;
+        padding-left: 550px;
+        position: absolute;       
+        font-weight: 700;
+        font-size: 19px;
+        color: #EC2525;
+        text-align: center;
+    }
+    .card__price--common {
+        width: 72px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #606060;
+        display: flex;
+        position: absolute;
+        padding-left: 560px;
+        padding-top: 20px;
+        text-decoration: line-through;
+    }
+    .card__title {
+        width:  355px;
+        padding-left: 15px;
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.2;
+        text-decoration: none;
+        color: #414141;
+    }
+    .card__title:hover {
+        color: #ff6633;
+    }
+
+        /* Кнопки */
+    .quantity {
+        padding-top: 20px;
+        margin-right: 170px;
+    }
+
+    .quantity input {
+        border: none;
+        text-align: center;
+        width: 32px;
+        font-size: 16px;
+        color: #43484D;
+        font-weight: 300;
+    }
+    
+    button {
+        width: 30px;
+        height: 30px;
+        background-color: #FE9015;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .minus-btn img {
+        margin-bottom: 3px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .plus-btn img {
+        margin-top: 2px;
+        width: 15px;
+        height: 15px;
+    }
+    
+    button:focus,
+    input:focus {
+        outline:0;
+    }
+
+    .bukvi {
+        display: flex;
+        gap: 20px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    img.ikonki {
+        width: 20px;
+        padding-right: 7px;
+        padding-top: 20px;
+    }
+
+    /* Функции */
+    .ydal {
+        color: #EC2525;
+        text-decoration: none;
+    }
+    .ydal:hover {
+        text-decoration: underline;
+    }
+    .zakaz {
+        color: #FE9015;
+        text-decoration: none;
+    }
+    .zakaz:hover {
+        text-decoration: underline;
+    }
+
+    /* окно */
+    .cart-block {
+        display: block;
+        position: relative;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        width: 362px;
+        height: 280px;
+        border-radius: 5px;
+        border: 1px solid #C8CBD0;
+    }
+
+    .btn-korzina {
+    width: 312px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    }
+
+    .card__summa{
+    width: 131px;
+    height: 14px;
+    padding-left: 50px; 
+    padding-top: 12px;
+    }
+
+    .card__summa--itog{
+    width: 72px;
+    height: 15px;
+    margin-right: 45px;
+    font-size: 14px;
+    font-weight: 700;
+    }
+
+    .card__summaa{
+    width: 247px;
+    height: 38px;
+    padding-left: 50px; 
+    padding-top: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    } 
+
+    .colorlolo{
+    width: 247px;
+    height: 38px;
+    padding-left: 50px; 
+    padding-top: 20px;
+    line-height: 15px;  
+    color: grey;
+    }
+
+    .card__summa--alll{
+    width: 131px;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 45px;
+    padding-top: 15px;
+    position: absolute;
+    }
+
+    .card__summa--itogu{
+    width: 144px;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 225px;
+    padding-top: 15px;
+    }
+
+    .btn-korzina:hover {
+        transition: 0.5s;
+        background-color: #db7e13;
+        color: #fff;
+    }
 `
+
 
 // Подвал
 const Footer = styled.div`
@@ -236,19 +460,16 @@ const Podpis = styled.div`
         }
     `
 
-const Foot2 = styled.div`
-        display: flex;
-        width: 100%;
-        height: 100px;
-        gap: 40px;
-        padding-left: 147px;
-        font-size: 12px;
-        font-weight: 500;
-        color: #848992;
-    `
-const Textt = styled.div`
-        
-    `
+const Foot2 = styled.div` 
+    display: flex;
+    width: 100%;
+    height: 100px;
+    gap: 40px;
+    padding-left: 147px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #848992;
+`
 
 // Сам код
 const Pay = () => {
@@ -285,7 +506,7 @@ const Pay = () => {
                     <MenuItem><a class="link" href="/voity">Войти</a></MenuItem>
                     <MenuItem>
                         <Badge badgeContent={4} color="primary">
-                            <ShoppingCart />
+                            <a href="/shop"><ShoppingCart /></a>
                         </Badge>
                     </MenuItem>
                 </Right>
@@ -299,6 +520,138 @@ const Pay = () => {
             {/* Подвал */}
             <Block2>
                 <h1>Корзина</h1>
+                <div class="shopping-cart">
+                    <div class="card">
+                        <div class="card__top">
+                            <a href="/korm" class="card__img">
+                                <img src={roual1} alt="roual1" />
+                            </a>
+                            <div class="card__label">-33%</div>
+                        </div>
+                        <div class="card__right">
+                            <a href="/korm" className="card__title">Сухой корм Royal Canin Mini adult для собак <br /> мелких пород с 10 месяцев до 3 лет / Вес – 12 кг</a>
+                            <span class="bukvi">
+                                <a class="ydal" href='#'><img class="ikonki" src={deletee} alt="deletee" />Удалить</a>
+                                <a class="zakaz" href='#'><img class="ikonki" src={repeat} alt="repeat" />Заказывать повторно</a>
+                            </span>
+                            <div className="card__prices">
+                                <div className="card__price card__price--discount">3015 ₽</div>
+                                <div className="card__price card__price--common">4500 ₽</div>
+                            </div>
+                        </div>
+                        <div class="quantity">
+                            <button class="minus-btn" type="button" name="button">
+                                <img src={minus} alt="minus" />
+                            </button>
+                            <input type="text" name="name" value="1шт" />
+                            <button class="plus-btn" type="button" name="button">
+                                <img src={plus} alt="plus" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__top">
+                            <a href="/korm" class="card__img">
+                                <img src={chik1} alt="roual1" />
+                            </a>
+                            <div class="card__label">-50%</div>
+                        </div>
+                        <div class="card__right">
+                            <a href="/korm" className="card__title">Пуходерка Hello Pet 16811M металлическая средняя</a>
+                            <span class="bukvi">
+                                <a class="ydal" href='#'><img class="ikonki" src={deletee} alt="deletee" />Удалить</a>
+                                <a class="zakaz" href='#'><img class="ikonki" src={repeat} alt="repeat" />Заказывать повторно</a>
+                            </span>
+                            <div className="card__prices">
+                                <div className="card__price card__price--discount">978 ₽</div>
+                                <div className="card__price card__price--common">1957 ₽</div>
+                            </div>
+                        </div>
+                        <div class="quantity">
+                            <button class="minus-btn" type="button" name="button">
+                                <img src={minus} alt="minus" />
+                            </button>
+                            <input type="text" name="name" value="1шт" />
+                            <button class="plus-btn" type="button" name="button">
+                                <img src={plus} alt="plus" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__top">
+                            <a href="/korm" class="card__img">
+                                <img src={kon1} alt="roual1" />
+                            </a>
+                            <div class="card__label">-65%</div>
+                        </div>
+                        <div class="card__right">
+                            <a href="/korm" className="card__title">Консервы Royal Canin Adult Beauty для собак (195 гр)</a>
+                            <span class="bukvi">
+                                <a class="ydal" href='#'><img class="ikonki" src={deletee} alt="deletee" />Удалить</a>
+                                <a class="zakaz" href='#'><img class="ikonki" src={repeat} alt="repeat" />Заказывать повторно</a>
+                            </span>
+                            <div className="card__prices">
+                                <div className="card__price card__price--discount">420 ₽</div>
+                                <div className="card__price card__price--common">1199 ₽</div>
+                            </div>
+                        </div>
+                        <div class="quantity">
+                            <button class="minus-btn" type="button" name="button">
+                                <img src={minus} alt="minus" />
+                            </button>
+                            <input type="text" name="name" value="1шт" />
+                            <button class="plus-btn" type="button" name="button">
+                                <img src={plus} alt="plus" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__top">
+                            <a href="/korm" class="card__img">
+                                <img src={tab1} alt="roual1" />
+                            </a>
+                            <div class="card__label">-33%</div>
+                        </div>
+                        <div class="card__right">
+                            <a href="/korm" className="card__title">Zoetis: Симпарика 5мг (3таб.) от блох и клещей для собак 1,3-2,5кг </a>
+                            <span class="bukvi">
+                                <a class="ydal" href='#'><img class="ikonki" src={deletee} alt="deletee" />Удалить</a>
+                                <a class="zakaz" href='#'><img class="ikonki" src={repeat} alt="repeat" />Заказывать повторно</a>
+                            </span>
+                            <div className="card__prices">
+                                <div className="card__price card__price--discount">3244 ₽</div>
+                                <div className="card__price card__price--common">5899 ₽</div>
+                            </div>
+                        </div>
+                        <div class="quantity">
+                            <button class="minus-btn" type="button" name="button">
+                                <img src={minus} alt="minus" />
+                            </button>
+                            <input type="text" name="name" value="1шт" />
+                            <button class="plus-btn" type="button" name="button">
+                                <img src={plus} alt="plus" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-block">
+                    <div class="cart-counter-wrapper">
+                        <button class="btn-korzina">Оформить заказ</button>
+                    </div>
+                    <div className="card__prices">
+                        <div className="card__summa card__summa--all">4 товара</div>
+                        <div className="card__summa card__summa--itog"><b>7657 ₽</b></div>
+                    </div>
+                    <div className="card__mesto">
+                        <div className="card__summaa card1__summa--all">Доставка курьером по Тюмени - <b>0 рублей</b></div>
+                        <p className='colorlolo'>(бесплатно от 1500 рублей)</p>
+                    </div>
+                    <hr />
+                    <div className="card__utogg">
+                        <div className="card__summaro card__summa--alll">Итого</div>
+                        <div className="card__summar card__summa--itogu">7657 ₽</div>
+                    </div> 
+                </div>
             </Block2>
             <hr />
             <Footer>
@@ -315,9 +668,9 @@ const Pay = () => {
                 </Podpis>
             </Footer>
             <Foot2>
-                <Textt>© 2015-2019 Интернет-магазин <br /> зоотоваров «Сытая Морда»</Textt>
-                <Textt>Стоимость товаров на сайте <br /> не являеся публичой офертой</Textt>
-                <Textt>Условия соглашения</Textt>
+                <p>© 2015-2019 Интернет-магазин <br /> зоотоваров «Сытая Морда»</p>
+                <p>Стоимость товаров на сайте <br /> не являеся публичой офертой</p>
+                <p>Условия соглашения</p>
             </Foot2>
         </Container>
     )

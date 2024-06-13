@@ -351,10 +351,6 @@ const Foot2 = styled.div`
     font-weight: 500;
     color: #848992;
 `
-const Textt = styled.div`
-    
-`
-
 
 // Сам код
 const Dogs = () => {
@@ -391,7 +387,7 @@ const Dogs = () => {
                     <MenuItem><a class="link" href="/voity">Войти</a></MenuItem>
                     <MenuItem>
                         <Badge badgeContent={4} color="primary">
-                            <ShoppingCart />
+                        <a href="/shop"><ShoppingCart /></a>
                         </Badge>
                     </MenuItem>
                 </Right>
@@ -511,9 +507,9 @@ const Dogs = () => {
                 </Podpis>
             </Footer>
             <Foot2>
-                <Textt>© 2015-2019 Интернет-магазин <br /> зоотоваров «Сытая Морда»</Textt>
-                <Textt>Стоимость товаров на сайте <br /> не являеся публичой офертой</Textt>
-                <Textt>Условия соглашения</Textt>
+                <p>© 2015-2019 Интернет-магазин <br /> зоотоваров «Сытая Морда»</p>
+                <p>Стоимость товаров на сайте <br /> не являеся публичой офертой</p>
+                <p>Условия соглашения</p>
             </Foot2>
         </Container>
     )
