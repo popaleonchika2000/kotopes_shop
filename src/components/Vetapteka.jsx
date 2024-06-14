@@ -32,7 +32,7 @@ const Headd = styled.ul`
     height: 60px;
     display: flex;
     list-style: none;
-    margin: 0;  
+    margin: 0;
     padding: 20px;
     font-weight: 600;
 `
@@ -44,18 +44,18 @@ const Left = styled.div`
     align-items: center;
 `
 const Center = styled.div`
-    flex: 3;    
+    flex: 3;
     text-align: left;
     padding-left: 80px;
     align-items: right;
     display: flex;
-    .oyee {
-        text-decoration: none;
-    }
-    .oyee:hover {
+`
+const OyeeLink = styled.a`
+    text-decoration: none;
+
+    &:hover {
         color: #FE9015;
     }
-
 `
 const Right = styled.div`
     flex: 1;
@@ -66,77 +66,81 @@ const Right = styled.div`
 const SearchContainer = styled.div`
     @import url(https://fonts.googleapis.com/css?family=Roboto);
     body {
-    background-color : #FAFAFA;
-    display : grid;
+        background-color: #FAFAFA;
+        display: grid;
     }
-    .search_box {
-    padding-top : 30px;
+`
+const SearchBox = styled.div`
+    padding-top: 30px;
     padding-left: 500px;
-    }
-    .search {
+`
+const Search = styled.div`
     padding-left: 25px;
     display: flex;
     align-items: center;
-    margin : auto;
-    width : 612px;
+    margin: auto;
+    width: 612px;
     height: 54px;
-    background-color : white;
+    background-color: white;
     border-radius: 25px;
-    -webkit-box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.1);
-    box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.1);
-    }
-    .select_area {
-    color : #4451FE;
-    display : flex;
+    -webkit-box-shadow: 0px 10px 38px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 38px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 38px 0px rgba(0, 0, 0, 0.1);
+`
+const SelectArea = styled.div`
+    color: #4451FE;
+    display: flex;
     align-items: center;
-    font-family: 'Roboto', sans-serif; line-height:24px;
-    font-weight : medium ;
-    }
-    .text {
-    padding-left:15px;
-    }
-    .line {
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    font-weight: medium;
+`
+const Text = styled.div`
+    padding-left: 15px;
+`
+const Line = styled.div`
     margin-left: 15px;
     border-left: 1px solid #D8D8D8;
     height: 40px;
-    }
-    .search_text {
+`
+const SearchText = styled.input`
     width: 100%;
     border: none;
-    margin-left : 15px;
-    font-size : 16px;
-    font-family: 'Roboto', sans-serif; line-height:24px;
-    font-weight : "Regular";
+    margin-left: 15px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    font-weight: Regular;
+
+    &:focus {
+        outline: none !important;
     }
-    .text_and-icon {
+`
+const TextAndIcon = styled.div`
     width: 410px;
     display: flex;
     align-items: center;
-    }
-    .search_text:focus {
-    outline: none !important;
-    }
-    .search_text:focus + .search_icon{
-    color : #4451FE;
-    transform: translate(55px,0);
-        -webkit-transform: translate(55px,0); 
-        -o-transform: translate(55px,0); 
-        -moz-transform: translate(55px);
+
+    ${SearchText}:focus + & {
+        color: #4451FE;
+        transform: translate(55px, 0);
+        -webkit-transform: translate(55px, 0);
+        -o-transform: translate(55px, 0);
+        -moz-transform: translate(55px, 0);
     }
 `
 const MenuItem = styled.div`
     font-size: 15px;
     cursor: pointer;
     margin-right: 30px;
-    .link {
-        text-decoration: none;
-    }
-    .link:hover {
+`
+const LinkItem = styled.a`
+    text-decoration: none;
+
+    &:hover {
         color: #FE9015;
     }
 `
-
 const Pitomsi = styled.div`
     display: flex;
     width: 380px;
@@ -144,10 +148,11 @@ const Pitomsi = styled.div`
     padding-top: 50px;
     padding-left: 90px;
     gap: 30px;
-    .link {
-     text-decoration: none;   
-    }
-    .link:hover {
+`
+const PitomsiLink = styled.a`
+    text-decoration: none;
+
+    &:hover {
         color: #ED1C22;
     }
 `
@@ -296,49 +301,49 @@ const Kartochki3 = styled.div`
 // Подвал
 const Footer = styled.div`
     width: 100%;
-    height: 130px; 
+    height: 130px;
     padding-top: 50px;
     top: 51px;
     padding-left: 147px;
 `
 const Podpis = styled.div`
     padding-top: 30px;
-    .box {
-        display: flex;
-        align-items: center;
-        justify-content: left;
-        height: 40px;
-    }
-    .form-box {
-        padding: 10px;
-        border-radius: 5px;
-        background-color: #ececec8d;
-        box-shadow: 10px 10px 15px #f0e7e7d1, -10px -10px -15px #fff;
-    }
-    .form-box input {
-        font-size: 16px;
-        color: #000000;
-        padding: 5px 5px;
-        outline: none;
-        border: none;
-        border-color: #969696b5;
-        background: #ececec;
-    }
-    .form-box button {
-        color: #ffffff;
-        padding: 7px 10px;
-        font-size: 14px;
-        border: none;
-        border-radius: 4px;
-        background-color: #8d8d8d;
-        cursor: pointer;
-        transition: .3s;
-    }
-    .form-box button:hover {
+`
+const Box = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 40px;
+`
+const FormBox = styled.div`
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ececec8d;
+    box-shadow: 10px 10px 15px #f0e7e7d1, -10px -10px -15px #fff;
+`
+const FormInput = styled.input`
+    font-size: 16px;
+    color: #000000;
+    padding: 5px 5px;
+    outline: none;
+    border: none;
+    border-color: #969696b5;
+    background: #ececec;
+`
+const FormButton = styled.button`
+    color: #ffffff;
+    padding: 7px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #8d8d8d;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
         background-color: #6b6b6b;
     }
 `
-
 const Foot2 = styled.div`
     display: flex;
     width: 100%;
@@ -357,45 +362,45 @@ const Vetapteka = () => {
         <Container>
             <Headd>
                 <Left>
-                    <a href="/flat"><img src={kotopes} alt="Logo" /></a>
+                    <a href="flat"><img src={kotopes} alt="Logo" /></a>
                     <SearchContainer>
-                        <div class="search_box">
-                            <div class="search">
-                                <div class="select_area">
-                                    <i class="fas fa-map-marker-alt map_icon"></i>
-                                    <div class="text">Moscow</div>
-                                </div>
-                                <div class="line"></div>
-                                <div class="text_and-icon">
-                                    <input type="text" class="search_text" id="search_text" placeholder="Поиск товаров" />
+                        <SearchBox>
+                            <Search>
+                                <SelectArea>
+                                    <i className="map_icon"></i>
+                                    <Text>Moscow</Text>
+                                </SelectArea>
+                                <Line />
+                                <TextAndIcon>
+                                    <SearchText type="text" id="search_text" placeholder="Поиск товаров" />
                                     <SearchIcon style={{ color: "gr", fontSize: 25 }} />
-                                </div>
-                            </div>
-                        </div>
+                                </TextAndIcon>
+                            </Search>
+                        </SearchBox>
                     </SearchContainer>
                 </Left>
                 <Center>
-                    <MenuItem> <a class="oyee" href="/aboutus">О нас</a></MenuItem>
-                    <MenuItem><a class="oyee" href="/politika">Политика конфиденциальности</a></MenuItem>
-                    <MenuItem><a class="oyee" href="/bonuss">Бонусы</a></MenuItem>
-                    <MenuItem><a class="oyee" href="/yslovie">Условия</a></MenuItem>
-                    <MenuItem><a class="oyee" href="/kontakt">Контакты</a></MenuItem>
+                    <MenuItem><OyeeLink href="/aboutus">О нас</OyeeLink></MenuItem>
+                    <MenuItem><OyeeLink href="/politika">Политика конфиденциальности</OyeeLink></MenuItem>
+                    <MenuItem><OyeeLink href="/bonuss">Бонусы</OyeeLink></MenuItem>
+                    <MenuItem><OyeeLink href="/yslovie">Условия</OyeeLink></MenuItem>
+                    <MenuItem><OyeeLink href="/kontakt">Контакты</OyeeLink></MenuItem>
                 </Center>
                 <Right>
-                    <MenuItem><a class="link" href="/registr">Регистрация</a></MenuItem>
-                    <MenuItem><a class="link" href="/voity">Войти</a></MenuItem>
+                    <MenuItem><LinkItem href="/registr">Регистрация</LinkItem></MenuItem>
+                    <MenuItem><LinkItem href="/voity">Войти</LinkItem></MenuItem>
                     <MenuItem>
                         <Badge badgeContent={4} color="primary">
-                        <a href="/shop"><ShoppingCart /></a>
+                            <a href="/shop"><ShoppingCart /></a>
                         </Badge>
                     </MenuItem>
                 </Right>
             </Headd>
             <Pitomsi>
-                <a class="link" href="/cats">Кошки</a>
-                <a class="link" href="/dogs">Собаки</a>
-                <a class="link" href="/apteka">Ветаптека</a>
-                <a class="link" href="/sales">Акции</a>
+                <PitomsiLink href="/cats">Кошки</PitomsiLink>
+                <PitomsiLink href="/dogs">Собаки</PitomsiLink>
+                <PitomsiLink href="/apteka">Ветаптека</PitomsiLink>
+                <PitomsiLink href="sales">Акции</PitomsiLink>
             </Pitomsi>
             {/* Подвал */}
             <Block2>
@@ -489,19 +494,19 @@ const Vetapteka = () => {
             <Footer>
                 <p>Узнавайте о новых скидках и спецпредложениях:</p>
                 <Podpis>
-                    <div class="box">
+                    <Box>
                         <form action="#">
-                            <div class="form-box">
-                                <input type="text" name='EmailAddress' placeholder='Ваш E-mail' />
-                                <button type='submit'>Подписаться</button>
-                            </div>
+                            <FormBox>
+                                <FormInput type="text" name='EmailAddress' placeholder='Ваш E-mail' />
+                                <FormButton type='submit'>Подписаться</FormButton>
+                            </FormBox>
                         </form>
-                    </div>
+                    </Box>
                 </Podpis>
             </Footer>
             <Foot2>
                 <p>© 2015-2019 Интернет-магазин <br /> зоотоваров «Сытая Морда»</p>
-                <p>Стоимость товаров на сайте <br /> не являеся публичой офертой</p>
+                <p>Стоимость товаров на сайте <br /> не является публичной офертой</p>
                 <p>Условия соглашения</p>
             </Foot2>
         </Container>
