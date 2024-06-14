@@ -1,6 +1,6 @@
 # **Интернет магазин Сытая морда**
-### Порадуй своего пушистого друга! :
-![Снимок](https://github.com/popaleonchika2000/kotopes_shop/assets/171007195/ca7ee564-3f01-49a0-b08b-a520961997d5)
+### Порадуй своего пушистого друга!    
+![Снимок](https://github.com/popaleonchika2000/kotopes_shop/assets/171007195/ca7ee564-3f01-49a0-b08b-a520961997d5)    
 
 
 ### *Ассортимент:*
